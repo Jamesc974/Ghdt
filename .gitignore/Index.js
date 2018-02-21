@@ -4,8 +4,8 @@ const client = new Discord.Client();
 var prefix = '!';
 
 bot.on('ready', function () {
-  bot.user.setPresence({ game: { name: 'LastWalls.fr'}})
-  console.log("Bot LastWalls Connecté est prés pour l'emploit!")
+  bot.user.setPresence({ game: { name: 'Half.NorthLife.fr'}})
+  console.log("Bot HNL Connecté est prés pour l'emploit!")
 })
 
 bot.on('message', message => {
@@ -18,8 +18,7 @@ bot.on('message', message => {
           description: `
 "Pour avoir les commandes c'est très simple"
 "**!staff**" "Pour voir tous le staff !"
-"**!installateur**" "Pour rejoindre le serveur."
-"**!launcher**" Pour rejoindre le serveur."
+"**!addons**" "Pour avoir les addons du serveur."
 "**!site**" Pour rejoindre le site."
 "**!regles**" "Pour voir les règles !"
 "**!help**" "Pour voir les commandes du bot Musique !"
@@ -28,7 +27,7 @@ bot.on('message', message => {
           timstamp: new Date(),
           footer: {
               icon_url: bot.user.avatarURL,
-              text: 'Par LastWalls'
+              text: 'Par Harf-NorthLife'
             }  
           }})
       })
@@ -36,39 +35,23 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === '!installateur') {
+  if (message.content === '!addons') {
       message.channel.send({embed: {
           color: 3447003,
           icon_url: bot.user.avatarURL,
           description: `
-              **LastWalls**
-**Télécharger le installateur**
-[Click Ici](http://www.mediafire.com/file/28qg6zh6ur1b466/installer-LastWalls-Roleplay.jar)📁`,
+              **Harf-NorthLife**
+**Télécharger les addons**
+[Click Ici]()📁`,
           timstamp: new Date(),
           footer: {
               icon_url: bot.user.avatarURL,
-              text: 'Par LastWalls'
+              text: 'Par Harf-NorthLife'
           }
       }});
   }
 });
 
-bot.on('message', message => {
-  if (message.content === '!launcher') {
-      message.channel.send({embed: {
-          color: 3447003,
-          icon_url: bot.user.avatarURL,
-          description: `**LastWalls**
-**Télécharger le launcher*
-[Click Ici](https://cdn.discordapp.com/attachments/407594692700536833/408348468890042378/LastWalls.jar)📁`,
-          timstamp: new Date(),
-          footer: {
-              icon_url: bot.user.avatarURL,
-              text: 'Par LastWalls'
-          }
-      }});
-  }
-});
 
 bot.on('message', message => {
   if (message.content === '!site') {
@@ -76,11 +59,11 @@ bot.on('message', message => {
           color: 3448263,
           icon_url: bot.user.avatarURL,
           description: `**LastWalls**
-[Click Ici](https://www.lastwalls.fr/)💻`,
+[Click Ici]()💻`,
           timstamp: new Date(),
           footer: {
               icon_url: bot.user.avatarURL,
-              text: 'Par LastWalls'
+              text: 'Par Harf-NorthLife'
           }
       }});
   }
@@ -92,19 +75,11 @@ bot.on('message', message => {
           color: 3447003,
           icon_url: bot.user.avatarURL,
           description: `
-          LastWalls
-Article 1 : Les joueurs sont égaux en droits sur le serveur, et ils auront le devoir de respecter les règles de ce dernier.
-Article 2 : Toutes pubs par messages privés passant par l’intermédiaire de ce serveur seront sévèrement sanctionné.
-Article 3 : Toutes diffamations sur d’autres joueurs du serveur ne sont pas acceptées. 
-Article 4 : Tous propos homophobes, racistes ou portant atteinte au choix de religions ou aux origines d’un joueur sont punissables.
-Article 5 : Toutes insultes, harcèlements ou propos portant atteinte à la dignités d’un joueur à son insu est punissable.
-Article 6 : Tout abus de pouvoir de la part d’un membre du staff sur un joueur ou encore du chantage sur ce dernier et punissable (Adressez-vous à ses supérieurs).
-Article 7 : Toutes propagations de contenues à caractères pornographiques ou pouvant heurter la sensibilité de certains n’est pas acceptées sur le serveur et sont punissables.
-(Ces règles sont valables sur le serveur en jeu ainsi que sur le serveur Discord).`,
+          Harf-NorthLife`,
           timstamp: new Date(),
           footer: {
               icon_url: bot.user.avatarURL,
-              text: 'Par LastWalls'
+              text: 'Par Harf-NorthLife'
           }
       }});
   }
@@ -117,41 +92,21 @@ bot.on('message', message => {
         channel.send({embed: {
           color: 6547003,
           icon_url: bot.user.avatarURL,
-          description: `Staff de LastWalls
+          description: `Staff de Harf-NorthLife
 _**Fondateur**_
-- *TarKyo_159* !À ne pas contacter en cas de probléme
-- *Esodyx*
+- *TarKyo_159*
 - *ReA974*
 - *KoWine/Justin Climb*
 _**Responsable Modèration**_
-- *Lieutenant de Botherel*
-- *DACEY/Rusk David*
 _**Modèrateur(ice)**_
-         
-- *B3arZko*
-- *Arnouxs | Arnaud Carrera*
-- *Lllyris*
-- *Cobora*
-_**Community Manageur**_
-- *Alexidre*
-_**Modèlisateur**_
-- *Tortpold*
-- *Kiozx*
-- *_Celeno_*
-              
+_**Community Manageur**_              
 _**Dèveloppeur**_
   **Recrutement ouvert**
-[Click Ici](https://www.lastwalls.fr/forum/Recrutement-D%C3%A9vellopeur.9/)💻
-           
-_**Responsable Architecte**_
-_**Architecte**_
-- *SayCord*
-  **Recrutement ouvert**
-[Click Ici](https://www.lastwalls.fr/forum/Recrutement-Builder.8/)💻`,
+[Click Ici]()💻`,
           timstamp: new Date(),
           footer: {
               icon_url: bot.user.avatarURL,
-              text: 'Par LastWalls'
+              text: 'Par Harf-NorthLife'
           }
         }
       })
@@ -174,7 +129,7 @@ bot.on('message', message => {
           timstamp: new Date(),
           footer: {
               icon_url: bot.user.avatarURL,
-              text: 'Par LastWalls'
+              text: 'Par Harf-NorthLife'
           }  
           }})
       })
@@ -243,19 +198,19 @@ bot.on('message', message => {
 
 
 bot.on('guildMemberAdd', member => {
-  member.guild.channels.find("name", "salon-bienvenue").send(`Bienvenue à toi **${member.user.username}** sur le serveur **LastWalls** :wink: !`);
+  member.guild.channels.find("name", "salon-bienvenue").send(`Bienvenue à toi **${member.user.username}** sur le serveur **Harf-NorthLife** :wink: !`);
     member.createDM().then(channel => {
-      channel.send(`Bienvenue à toi ${member.user.username} sur le serveur **LastWalls - Roleplay**
+      channel.send(`Bienvenue à toi ${member.user.username} sur le serveur **Harf-NorthLife - Roleplay**
       Pense bien à lire toutes les informations présentes dans **#Annonce** ou **#Regles** avant de continuer ta visite sur ce Discord !
-      pour nous rejoindre c'est simple clique **ici** > https://www.lastwalls.fr/p/Nous%20rejoindre
-      Si jamais tu rencontres le moindre problème, n'hésite pas à nous le dire dans **#general**.
+      pour nous rejoindre c'est simple clique **ici** > https://
+      Si jamais tu rencontres le moindre problème, n'hésite pas à nous le dire dans **#probleme**.
       **Bonne visite** :wink:`) 
     })
 });
 
 bot.on('guildMemberAdd', member => {
   console.log('User ' + member.username + 'à rejoins le serveur ')
-  var role = member.guild.roles.find('name', '👨🏻 Membre');
+  var role = member.guild.roles.find('name', '👔 Citoyen');
   member.addRole(role)
 })
 
