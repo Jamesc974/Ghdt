@@ -266,4 +266,4 @@ bot.on('guildMemberRemove', member => {
 
 
 
-bot.login('NDAzMjMwNDE5NDY3NjMyNjUw.DVBpDg.lxTSEUTIqtiPciiksVIxPIBUbRY')
+bot.login('NDE1ODc2MzY1OTEzNDIzODc0.DW8SkA.2yIyPiGoRrABKUTBz3T8gatIrjY')
