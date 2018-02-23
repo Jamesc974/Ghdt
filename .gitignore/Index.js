@@ -116,7 +116,7 @@ _**Dèveloppeur**_
 
 
 bot.on('message', message => {
-  if (message.content === '!commandstaff') {
+  if (message.content === '!cstaff') {
     if (message.member.roles.find("name", "Perm-all")) {
       message.author.createDM().then(channel => {
         message.reply('Regarde en message privé');
