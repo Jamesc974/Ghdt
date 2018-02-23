@@ -16,13 +16,13 @@ bot.on('message', message => {
           color: 234123,
           icon_url: bot.user.avatarURL,
           description: `
-"Pour avoir les commandes c'est très simple"
-"**!staff**" "Pour voir tous le staff !"
-"**!addons**" "Pour avoir les addons du serveur."
-"**!site**" Pour rejoindre le site."
-"**!regles**" "Pour voir les règles !"
-"**!help**" "Pour voir les commandes du bot Musique !"
-"**!commandestaff**" Pour voir les commandes staff
+Pour avoir les commandes c'est très simple
+**!staff** Pour voir tous le staff !
+**!addons** Pour avoir les addons du serveur.
+**!site** Pour rejoindre le site.
+**!regles** Pour voir les règles !
+**!help** Pour voir les commandes du bot Musique !
+**!cstaff** Pour voir les commandes staff
 `,
           timstamp: new Date(),
           footer: {
@@ -125,7 +125,7 @@ bot.on('message', message => {
             icon_url: bot.user.avatarURL,
             description: `
         **LastWalls**
-!supr Le nombre de message à suprimer`,
+!clear Le nombre de message à suprimer`,
           timstamp: new Date(),
           footer: {
               icon_url: bot.user.avatarURL,
@@ -136,7 +136,6 @@ bot.on('message', message => {
     }
   }
 });
-
 // if (message.content === '!kick') {
     // if (!message.channel.permissionsFor(message.member).hasPermission("KICK_MEMBERS")){
       // message.reply("Tu n'a pas les permission")
@@ -167,7 +166,7 @@ bot.on('message', message => {
   let args = cont.slice(1);
 
   // Purge
-  if (msg.startsWith(prefix + 'SUPR')) {
+  if (msg.startsWith(prefix + 'CLEAR')) {
       async function purge() {
           message.delete();
 
@@ -177,7 +176,7 @@ bot.on('message', message => {
           }
 
           if (isNaN(args[0])) {
-              message.channel.send(`Utilisez s'il vous plaît un numéro \n Usage: prefix + clear <Nombre>`);
+              message.channel.send(`Utilisez s'il vous plaît un numéro \n Exemple: prefix + clear <Nombre>`);
               return;
           }
 
